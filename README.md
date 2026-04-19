@@ -1,5 +1,9 @@
 # ApexFit: Adaptive Fitness & Nutrition Engine
 
+## Live Hosted Link
+  https://apex-fit-fitness-nutrition-engine.vercel.app
+
+
 ## Introduction
 
 ApexFit is a smart fitness and nutrition tracking app with a custom backend system. It helps users log their daily activities and gives simple suggestions on what to improve.
@@ -50,3 +54,5 @@ Some main endpoints used in the project:
 ## Conclusion
 
 ApexFit shows how simple backend logic can turn raw data into useful advice. By keeping the system clean and easy to understand, it helps users stay consistent and improve their fitness over time.
+
+
