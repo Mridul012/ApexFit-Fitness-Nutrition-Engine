@@ -11,9 +11,14 @@ import recommendationRoutes from './routes/recommendation.routes';
 
 const app = express();
 
+const allowedOrigins = [
+  'https://apex-fit-fitness-nutrition-engine.vercel.app',
+  process.env.FRONTEND_URL,
+].filter(Boolean) as string[];
+
 app.use(cors({
   origin: (origin, callback) => {
-    if (!origin || origin.startsWith('http://localhost:')) {
+    if (!origin || origin.startsWith('http://localhost:') || allowedOrigins.includes(origin)) {
       callback(null, true);
     } else {
       callback(new Error('Not allowed by CORS'));
